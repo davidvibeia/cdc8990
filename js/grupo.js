@@ -7,7 +7,7 @@
 
 (function () {
   var imagem = document.getElementById("foto-grupo");
-  var seccao = document.getElementById("reencontro");
+  var seccao = document.getElementById("jantar");
   if (!imagem || !seccao) {
     return;
   }

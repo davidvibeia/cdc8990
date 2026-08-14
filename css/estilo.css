@@ -1,4 +1,4 @@
-/* Geração D'Ouro 89/90 — Jantar Campeões CDC 2026
+/* Geração D'Ouro 89/90 — Jantar Anual 2026
    Mobile-first. Sem fontes externas, sem CDNs, sem rastreio. */
 
 :root {
@@ -87,13 +87,13 @@ body {
   border-radius: 10px;
 }
 
-/* O reencontro --------------------------------------------------------- */
+/* Jantar Anual --------------------------------------------------------- */
 
-.reencontro {
+.jantar {
   margin-top: 3.5rem;
 }
 
-.reencontro[hidden] {
+.jantar[hidden] {
   display: none;
 }
 
@@ -103,7 +103,7 @@ body {
   margin: 0 0 2.25rem;
 }
 
-.reencontro h2 {
+.jantar h2 {
   font-family: var(--serifada);
   font-weight: 400;
   font-size: 1.55rem;
@@ -131,13 +131,6 @@ body {
   font-size: 0.74rem;
   letter-spacing: 0.05em;
   color: var(--tenue);
-}
-
-.rodape a {
-  color: var(--tenue);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(239, 200, 28, 0.45);
-  padding-bottom: 1px;
 }
 
 /* Página de entrada ---------------------------------------------------- */
