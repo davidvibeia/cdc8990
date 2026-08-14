@@ -1,0 +1,202 @@
+/* Geração D'Ouro 89/90 — Jantar Campeões CDC 2026
+   Mobile-first. Sem fontes externas, sem CDNs, sem rastreio. */
+
+:root {
+  --fundo: #101310;
+  --texto: #ede9e0;
+  --suave: #9ba595;
+  --tenue: #7c8478;
+  --verde: #2c7c4e;
+  --amarelo: #efc81c;
+  --serifada: Georgia, "Times New Roman", Times, serif;
+  --sem-serifa: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--sem-serifa);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pagina {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 3.25rem 1.25rem 2.5rem;
+}
+
+/* Cabeçalho ------------------------------------------------------------ */
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.nome {
+  font-family: var(--serifada);
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1.15;
+  letter-spacing: 0.005em;
+  margin: 0;
+}
+
+.filete {
+  width: 44px;
+  height: 2px;
+  border: 0;
+  background: var(--amarelo);
+  margin: 1.15rem auto;
+}
+
+.subtitulo {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--suave);
+}
+
+.subtitulo .ponto {
+  color: var(--amarelo);
+  margin: 0 0.15em;
+}
+
+/* Imagens -------------------------------------------------------------- */
+
+.figura {
+  margin: 0 0 1.75rem;
+}
+
+.figura img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* O reencontro --------------------------------------------------------- */
+
+.reencontro {
+  margin-top: 3.5rem;
+}
+
+.reencontro[hidden] {
+  display: none;
+}
+
+.separador {
+  border: 0;
+  border-top: 1px solid rgba(44, 124, 78, 0.55);
+  margin: 0 0 2.25rem;
+}
+
+.reencontro h2 {
+  font-family: var(--serifada);
+  font-weight: 400;
+  font-size: 1.55rem;
+  color: var(--amarelo);
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.data {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--suave);
+}
+
+/* Rodapé --------------------------------------------------------------- */
+
+.rodape {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(237, 233, 224, 0.1);
+  text-align: center;
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--tenue);
+}
+
+.rodape a {
+  color: var(--tenue);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(239, 200, 28, 0.45);
+  padding-bottom: 1px;
+}
+
+/* Página de entrada ---------------------------------------------------- */
+
+.intro {
+  text-align: center;
+  color: var(--suave);
+  font-size: 0.95rem;
+  margin: 0 0 2.5rem;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista li {
+  border-bottom: 1px solid rgba(237, 233, 224, 0.09);
+}
+
+.lista li:first-child {
+  border-top: 1px solid rgba(237, 233, 224, 0.09);
+}
+
+.lista a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.95rem 0.25rem;
+  font-family: var(--serifada);
+  font-size: 1.25rem;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.lista a::after {
+  content: "\203A";
+  color: var(--verde);
+  font-family: var(--sem-serifa);
+  font-size: 1.2rem;
+}
+
+/* Foco visível para navegação por teclado ------------------------------ */
+
+a:focus-visible {
+  outline: 2px solid var(--amarelo);
+  outline-offset: 3px;
+}
+
+/* Ecrãs maiores -------------------------------------------------------- */
+
+@media (min-width: 40rem) {
+  .pagina {
+    padding-top: 4.5rem;
+  }
+
+  .nome {
+    font-size: 2.9rem;
+  }
+}
